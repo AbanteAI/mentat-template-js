@@ -46,9 +46,10 @@ app.get('*', (req: Request, res: Response) => {
         </head>
         <body>
           <h1>Mentat Template JS</h1>
+          <p>Everything is working correctly.</p>
           <p>This route renders the built project from the <code>/dist</code> directory, but there's currently nothing there.</p>
           <p>You can ask Mentat to build the project to see the React app here, or build it yourself with <code>npm run build</code>.</p>
-          <p><a href="/api">Test API endpoint</a></p>
+          <p><a href="/api">Go to API endpoint</a></p>
         </body>
       </html>
     `);
