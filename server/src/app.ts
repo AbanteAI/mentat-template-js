@@ -1,7 +1,7 @@
 import express, { Request, Response } from 'express';
 import cors from 'cors';
 import path from 'path';
-import fs from 'fs';
+import { existsSync } from 'fs';
 
 export const app = express();
 export const PORT = process.env.PORT || 5000;
@@ -22,7 +22,7 @@ app.get('*', (req: Request, res: Response) => {
   const indexPath = path.join(CLIENT_DIST_PATH, 'index.html');
 
   // Check if the built client exists
-  if (fs.existsSync(indexPath)) {
+  if (existsSync(indexPath)) {
     res.sendFile(indexPath);
   } else {
     // Serve a simple fallback page when the client hasn't been built
