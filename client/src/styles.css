@@ -8,3 +8,24 @@ body {
   font-family: 'Inter', sans-serif;
   background-color: #f0f0f0;
 }
+
+h1 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1f2937;
+  text-align: center;
+}
+
+.paper {
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  padding: 32px;
+  width: 100%;
+}
+
+.section {
+  background-color: #f8fafc;
+  border-radius: 8px;
+  padding: 16px;
+}
